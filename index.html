@@ -1,0 +1,2536 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tur | Etstur</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main Header Navigation -->
+    <header class="main-header">
+        <div class="container-fluid">
+            <div class="header-content">
+                <div class="header-logo">
+                    <a href="/" class="logo-link">
+                        <span class="logo-ets">ets</span><span class="logo-tur">tur</span>
+                    </a>
+                </div>
+                <nav class="header-nav">
+                    <div class="nav-item-dropdown">
+                        <a href="#" class="nav-link">Otel <span class="dropdown-arrow">▼</span></a>
+                    </div>
+                    <div class="nav-item-dropdown">
+                        <a href="#" class="nav-link">Tur <span class="dropdown-arrow">▼</span></a>
+                    </div>
+                    <div class="nav-item-dropdown">
+                        <a href="#" class="nav-link">Kıbrıs <span class="dropdown-arrow">▼</span></a>
+                    </div>
+                    <div class="nav-item-dropdown">
+                        <a href="#" class="nav-link">Villa <span class="dropdown-arrow">▼</span></a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">Uçak</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">Otobüs</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link">Kampanyalar</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#" class="nav-link nav-link-highlight">Erken Rezervasyon</a>
+                    </div>
+                </nav>
+                <div class="header-user">
+                    <a href="#" class="user-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+        <div class="container-fluid">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <div class="logo">
+                        <span class="logo-text">etstur</span>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <a href="#" class="nav-action">
+                        <span class="icon">📞</span>
+                        <span>444 0 387</span>
+                    </a>
+                    <a href="#" class="nav-action">
+                        <span class="icon">👤</span>
+                        <span>Giriş Yap</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Search -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <!-- Simple Search Bar -->
+            <div class="simple-search">
+                <input type="text" class="search-input-field" placeholder="Tur adı, Şehir, Ülke ve Tema giriniz">
+                <input type="text" class="search-input-field" placeholder="Dönem Seçiniz">
+                <button class="search-btn-blue">🔍</button>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <h1 class="hero-title">Turlar</h1>
+                <div class="description-wrapper">
+                    <p class="hero-description" id="heroDescription">
+                        Seyahat tutkunları, maceraseverler, kaşfiler, doğal güzelliklerin, lezzetin ya da tarihin
+                        izlerini sürmek isteyenler... ETS'de çok özel programlar sunan turlar ile heyecan dolu
+                        deneyimler sizi bekliyor! İster Yurt Dışı Turları ister Turları ile dünyanın dört bir
+                        köşesinde, kısa ya da uzun süreli, yakın ya da uzak mesafede bir tatil planlayıp yepyeni
+                        hikayelerin peşine düşebilirsiniz.
+                        <span class="extra-content">
+                            Turlarımız, her zevke ve bütçeye uygun seçenekler sunmaktadır. Kültür turları ile tarihi
+                            şehirleri keşfedebilir, doğa turları ile eşsiz manzaraların tadını çıkarabilir, gastronomi
+                            turları ile yerel lezzetleri deneyimleyebilirsiniz. Ayrıca, yılbaşı turları, bayram turları
+                            ve özel dönem turları ile önemli günlerde unutulmaz anılar biriktirme fırsatı
+                            bulabilirsiniz. Profesyonel rehberlerimiz eşliğinde, güvenli ve konforlu bir seyahat
+                            deneyimi yaşayacaksınız.
+                        </span>
+                    </p>
+                    <button class="read-more-btn" id="readMoreBtn" onclick="toggleContent()">
+                        Daha Fazla Oku +
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Yurtdışı Turları Module -->
+            <section class="international-tours-section">
+                <h2 class="module-title">Yurtdışı Turları</h2>
+                <p class="module-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+
+                <!-- Tour Category Cards -->
+                <div class="tour-category-cards">
+                    <!-- Avrupa Turları Card -->
+                    <div class="category-card-box">
+                        <div class="card-header">
+                            <h3 class="card-category-title">Avrupa Turları</h3>
+                        </div>
+                        <div class="card-links">
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Italya-Turlari"
+                                    class="tour-link-text">
+                                    <h4>İtalya Turları</h4>
+                                </a>
+                                <p class="tour-info">12 tur • €450'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Balkan-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Balkan Turları</h4>
+                                </a>
+                                <p class="tour-info">8 tur • €380'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Yunanistan-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Yunanistan Turları</h4>
+                                </a>
+                                <p class="tour-info">10 tur • €420'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Ispanya-Turlari"
+                                    class="tour-link-text">
+                                    <h4>İspanya Turları</h4>
+                                </a>
+                                <p class="tour-info">9 tur • €490'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Prag-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Prag Turları</h4>
+                                </a>
+                                <p class="tour-info">9 tur • €410'den</p>
+                            </div>
+                        </div>
+                        <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Avrupa-Turlari" class="view-all-link">
+                            Bütün Avrupa Turları →
+                        </a>
+                    </div>
+
+                    <!-- Ortadoğu Turları Card -->
+                    <div class="category-card-box">
+                        <div class="card-header">
+                            <h3 class="card-category-title">Ortadoğu Turları</h3>
+                        </div>
+                        <div class="card-links">
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Misir-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Mısır Turları</h4>
+                                </a>
+                                <p class="tour-info">7 tur • €280'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Dubai-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Dubai Turları</h4>
+                                </a>
+                                <p class="tour-info">6 tur • €350'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Sharm-El-Sheikh-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Sharm el Sheikh Turları</h4>
+                                </a>
+                                <p class="tour-info">5 tur • €290'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Doha-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Doha Turları</h4>
+                                </a>
+                                <p class="tour-info">7 tur • €330'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Abu-Dhabi-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Abu Dhabi Turları</h4>
+                                </a>
+                                <p class="tour-info">7 tur • €380'den</p>
+                            </div>
+                        </div>
+                        <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Orta-Dogu-Turlari" class="view-all-link">
+                            Bütün Ortadoğu Turları →
+                        </a>
+                    </div>
+
+                    <!-- Uzak Doğu Turları Card -->
+                    <div class="category-card-box">
+                        <div class="card-header">
+                            <h3 class="card-category-title">Uzak Doğu Turları</h3>
+                        </div>
+                        <div class="card-links">
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Japonya-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Japonya Turları</h4>
+                                </a>
+                                <p class="tour-info">6 tur • €750'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Bali-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Bali Turları</h4>
+                                </a>
+                                <p class="tour-info">5 tur • €580'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Maldivler-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Maldivler Turları</h4>
+                                </a>
+                                <p class="tour-info">8 tur • €890'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Tayland-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Tayland Turları</h4>
+                                </a>
+                                <p class="tour-info">6 tur • €600'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Guney-Kore-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Güney Kore Turları</h4>
+                                </a>
+                                <p class="tour-info">3 tur • €690'den</p>
+                            </div>
+                        </div>
+                        <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Uzak-Dogu-Turlari" class="view-all-link">
+                            Bütün Uzak Doğu Turları →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- View All International Tours -->
+                <div class="view-all-international">
+                    <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari" class="btn-view-all-international">
+                        Bütün Yurtdışı Turları →
+                    </a>
+                </div>
+            </section>
+
+            <!-- Cheapest International Tours Module -->
+            <section class="cheapest-tours-section">
+                <div class="module-header-wrapper">
+                    <h3 class="module-title-h3">En Ucuz Yurtdışı Turları</h3>
+                    <div class="info-tooltip-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#999" class="info-icon-svg"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>
+                        <div class="tooltip-content">
+                            etstur.com içerisinde aktif olan en ucuz turlar listelenmektedir, sektör bilgisini yansıtmaz
+                        </div>
+                    </div>
+                </div>
+                <p class="module-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <!-- Slider Container -->
+                <div class="cheapest-tours-slider-container">
+                    <button class="slider-btn prev-btn" onclick="scrollSlider('left')">❮</button>
+                    <div class="cheapest-tours-slider" id="cheapestToursSlider">
+                        <!-- Card 1 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 9 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 10 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/turk-hava-yollari-ile-buyuk-balkanlar-5-ulke-aksam-yemekleri-ve-sehir-turlari-dahil-JTS26BAL01'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/balkan_tour_card_1764835629018.png"
+                                    alt="Balkanlar">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Türk Hava Yolları ile Büyük Balkanlar 5 Ülke | Akşam
+                                    Yemekleri ve Şehir Turları Dahil |</h4>
+                                <p class="cheap-tour-detail">📍 İstanbul - Ohrid, Priştine, Tiran, Üsküp, Belgrad,
+                                    Saraybosna, Mostar, Niş</p>
+                                <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                <p class="cheap-tour-detail">📅 18 Nisan 2026 - 15 Kasım 2026</p>
+                                <p class="cheap-tour-price">€799'dan itibaren</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn next-btn" onclick="scrollSlider('right')">❯</button>
+                </div>
+            </section>
+
+            <!-- Gemi Turları Module -->
+            <section class="international-tours-section">
+                <h2 class="module-title">Cruise Gemi Turları</h2>
+                <p class="module-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+
+                <!-- Tour Category Cards -->
+                <div class="tour-category-cards">
+                    <!-- Popüler Rotaları Card -->
+                    <div class="category-card-box">
+                        <div class="card-header">
+                            <h3 class="card-category-title">Popüler Rotaları</h3>
+                        </div>
+                        <div class="card-links">
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Yunan-Adalari-Cruise-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Yunan Adaları Turları</h4>
+                                </a>
+                                <p class="tour-info">15 tur • €650'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Italya-Cruise-Turlari"
+                                    class="tour-link-text">
+                                    <h4>İtalya Turları</h4>
+                                </a>
+                                <p class="tour-info">12 tur • €720'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Norvec-Fiyortlari-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Norveç Fiyortları Turları</h4>
+                                </a>
+                                <p class="tour-info">8 tur • €890'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Ispanya-Cruise-Turlari"
+                                    class="tour-link-text">
+                                    <h4>İspanya Turları</h4>
+                                </a>
+                                <p class="tour-info">10 tur • €680'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Karayip-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Karayipler Turları</h4>
+                                </a>
+                                <p class="tour-info">6 tur • €1200'den</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Popüler Kalkış Noktaları Card -->
+                    <div class="category-card-box">
+                        <div class="card-header">
+                            <h3 class="card-category-title">Cruise Kalkış Noktaları</h3>
+                        </div>
+                        <div class="card-links">
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Istanbul-Kalkisli-Cruise-Turlar"
+                                    class="tour-link-text">
+                                    <h4>İstanbul Kalkışlı Turları</h4>
+                                </a>
+                                <p class="tour-info">18 tur • €550'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Izmir-cesme-Kalkisli-Cruise-Turlar"
+                                    class="tour-link-text">
+                                    <h4>Çeşme Kalkışlı Turları</h4>
+                                </a>
+                                <p class="tour-info">12 tur • €480'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Kusadasi-Kalkisli-Cruise-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Kuşadası Kalkışlı Turları</h4>
+                                </a>
+                                <p class="tour-info">14 tur • €520'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Izmir-Kalkisli-Cruise-Turlari"
+                                    class="tour-link-text">
+                                    <h4>İzmir Kalkışlı Turları</h4>
+                                </a>
+                                <p class="tour-info">10 tur • €490'den</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Popüler Şirketleri Card -->
+                    <div class="category-card-box">
+                        <div class="card-header">
+                            <h3 class="card-category-title">Popüler Şirketleri</h3>
+                        </div>
+                        <div class="card-links">
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Msc-Cruises-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Mscs Turları</h4>
+                                </a>
+                                <p class="tour-info">25 tur • €580'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Aroya-Cruise"
+                                    class="tour-link-text">
+                                    <h4>Aroya Turları</h4>
+                                </a>
+                                <p class="tour-info">8 tur • €620'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Selectum-Blu-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Selectum Blu Turları</h4>
+                                </a>
+                                <p class="tour-info">6 tur • €750'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Celebrity-Cruises-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Celebritys Turları</h4>
+                                </a>
+                                <p class="tour-info">12 tur • €890'den</p>
+                            </div>
+                            <div class="tour-item">
+                                <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Costa-Cruises-Turlari"
+                                    class="tour-link-text">
+                                    <h4>Costas Turları</h4>
+                                </a>
+                                <p class="tour-info">15 tur • €650'den</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Tours -->
+                <div class="view-all-international">
+                    <a href="https://www.etstur.com/Cruise-Gemi-Turlari" class="btn-view-all-international">
+                        Bütün Turları →
+                    </a>
+                </div>
+            </section>
+
+            <!-- En Ucuz Gemi Turları Module -->
+            <section class="cheapest-tours-section">
+                <div class="module-header-wrapper">
+                    <h3 class="module-title-h3">En Ucuz Gemi Turları</h3>
+                    <div class="info-tooltip-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#999" class="info-icon-svg"
+                            viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>
+                        <div class="tooltip-content">
+                            Bu bölümde gösterilen turlar Etstur içerisinde aktif olan turların en ucuz olanlarını
+                            göstermektedir, genel sektör bilgisini yansıtmamaktadır
+                        </div>
+                    </div>
+                </div>
+                <p class="module-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <!-- Slider Container -->
+                <div class="cheapest-tours-slider-container">
+                    <button class="slider-btn prev-btn" onclick="scrollSlider('left')">❮</button>
+                    <div class="cheapest-tours-slider" id="cheapestCruiseSlider">
+                        <!-- Card 1 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 9 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 10 -->
+                        <div class="cheap-tour-card"
+                            onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari-Msc%20Lirica-ile-izmir-kalkisli-Ege-Turu-Kasim%20-Aral%C4%B1k'">
+                            <div class="cheap-card-image">
+                                <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                    alt="Cruise Gemi Turu">
+                            </div>
+                            <div class="cheap-card-content">
+                                <h4 class="cheap-tour-title">Msc Lirica ile İzmir Kalkışlı Ege Turu Kasım - Aralık</h4>
+                                <p class="cheap-tour-detail">📍 İzmir - İzmir, İstanbul, Korfu, Bari, Piraeus (Pire)</p>
+                                <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                <p class="cheap-tour-detail">📅 09 Aralık 2025 - 30 Aralık 2025</p>
+                                <p class="cheap-tour-price">€450'den itibaren</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn next-btn" onclick="scrollSlider('right')">❯</button>
+                </div>
+            </section>
+
+
+
+            <!-- Özel Gün Turları Module -->
+            <section class="special-occasions-section">
+                <h2 class="module-title">Özel Gün Turları</h2>
+                <p class="module-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+
+                <!-- Tabs Navigation -->
+                <div class="tabs-container">
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" onclick="switchTab(event, 'yilbasi')">Yılbaşı Turları</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'ramazan')">Ramazan Bayramı Turları</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'kurban')">Kurban Bayramı Turları</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'somestr')">Sömestr Tatili Turları</button>
+                    </div>
+
+                    <!-- Tab Content: Yılbaşı Turları -->
+                    <div id="yilbasi" class="tab-content active">
+                        <h3 class="tab-title">Yılbaşı Turları</h3>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Yilbasi-Turlari/Prag-Yilbasi-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Yılbaşı Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Prag Yılbaşı Turu | Özel Gala Yemeği Dahil</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Prag</p>
+                                    <p class="cheap-tour-detail">⏱️ 4 gece 5 gün</p>
+                                    <p class="cheap-tour-detail">📅 29 Aralık 2025 - 02 Ocak 2026</p>
+                                    <p class="cheap-tour-price">€890'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Yilbasi-Turlari/Viyana-Yilbasi-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Yılbaşı Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Viyana Yılbaşı Turu | Konser ve Gala Yemeği</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Viyana</p>
+                                    <p class="cheap-tour-detail">⏱️ 4 gece 5 gün</p>
+                                    <p class="cheap-tour-detail">📅 29 Aralık 2025 - 02 Ocak 2026</p>
+                                    <p class="cheap-tour-price">€950'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Yilbasi-Turlari/Paris-Yilbasi-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Yılbaşı Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Paris Yılbaşı Turu | Eyfel Kulesi Manzaralı Gala</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Paris</p>
+                                    <p class="cheap-tour-detail">⏱️ 5 gece 6 gün</p>
+                                    <p class="cheap-tour-detail">📅 28 Aralık 2025 - 02 Ocak 2026</p>
+                                    <p class="cheap-tour-price">€1250'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Yilbasi-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Yılbaşı Turları →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Ramazan Bayramı Turları -->
+                    <div id="ramazan" class="tab-content">
+                        <h3 class="tab-title">Ramazan Bayramı Turları</h3>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Ramazan-Bayrami-Turlari/Umre-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Ramazan Bayramı Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Ramazan Bayramı Umre Turu | Özel Rehberlik</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Mekke, Medine</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 30 Mart 2026 - 06 Nisan 2026</p>
+                                    <p class="cheap-tour-price">€1200'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Ramazan-Bayrami-Turlari/Bosna-Hersek-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Ramazan Bayramı Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Ramazan Bayramı Bosna Hersek Turu</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Saraybosna, Mostar</p>
+                                    <p class="cheap-tour-detail">⏱️ 4 gece 5 gün</p>
+                                    <p class="cheap-tour-detail">📅 30 Mart 2026 - 03 Nisan 2026</p>
+                                    <p class="cheap-tour-price">€650'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Ramazan-Bayrami-Turlari/Makedonya-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Ramazan Bayramı Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Ramazan Bayramı Makedonya Turu</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Üsküp, Ohrid</p>
+                                    <p class="cheap-tour-detail">⏱️ 4 gece 5 gün</p>
+                                    <p class="cheap-tour-detail">📅 30 Mart 2026 - 03 Nisan 2026</p>
+                                    <p class="cheap-tour-price">€580'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Ramazan-Bayrami-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Ramazan Bayramı Turları →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Kurban Bayramı Turları -->
+                    <div id="kurban" class="tab-content">
+                        <h3 class="tab-title">Kurban Bayramı Turları</h3>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Kurban-Bayrami-Turlari/Yunanistan-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Kurban Bayramı Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Kurban Bayramı Yunanistan Turu | Atina, Selanik</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Atina, Selanik</p>
+                                    <p class="cheap-tour-detail">⏱️ 5 gece 6 gün</p>
+                                    <p class="cheap-tour-detail">📅 06 Haziran 2026 - 11 Haziran 2026</p>
+                                    <p class="cheap-tour-price">€780'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Kurban-Bayrami-Turlari/Italya-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Kurban Bayramı Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Kurban Bayramı İtalya Turu | Roma, Floransa, Venedik
+                                    </h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Roma, Floransa, Venedik</p>
+                                    <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                    <p class="cheap-tour-detail">📅 06 Haziran 2026 - 12 Haziran 2026</p>
+                                    <p class="cheap-tour-price">€1150'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Kurban-Bayrami-Turlari/Ispanya-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Kurban Bayramı Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Kurban Bayramı İspanya Turu | Barselona, Madrid</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Barselona, Madrid</p>
+                                    <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                    <p class="cheap-tour-detail">📅 06 Haziran 2026 - 12 Haziran 2026</p>
+                                    <p class="cheap-tour-price">€1080'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Kurban-Bayrami-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Kurban Bayramı Turları →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Sömestr Tatili Turları -->
+                    <div id="somestr" class="tab-content">
+                        <h3 class="tab-title">Sömestr Tatili Turları</h3>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Somestr-Tatili-Turlari/Disneyland-Paris-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Sömestr Tatili Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Sömestr Disneyland Paris Turu | Çocuklara Özel</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Paris</p>
+                                    <p class="cheap-tour-detail">⏱️ 5 gece 6 gün</p>
+                                    <p class="cheap-tour-detail">📅 01 Şubat 2026 - 15 Şubat 2026</p>
+                                    <p class="cheap-tour-price">€1350'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Somestr-Tatili-Turlari/Kayak-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Sömestr Tatili Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Sömestr Alpler Kayak Turu | Aileler İçin</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - İsviçre Alpleri</p>
+                                    <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                    <p class="cheap-tour-detail">📅 01 Şubat 2026 - 15 Şubat 2026</p>
+                                    <p class="cheap-tour-price">€1580'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Somestr-Tatili-Turlari/Legoland-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Sömestr Tatili Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Sömestr Legoland Danimarka Turu</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Kopenhag</p>
+                                    <p class="cheap-tour-detail">⏱️ 5 gece 6 gün</p>
+                                    <p class="cheap-tour-detail">📅 01 Şubat 2026 - 15 Şubat 2026</p>
+                                    <p class="cheap-tour-price">€1420'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Somestir-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Sömestr Tatili Turları →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Avantajlı Turlar Module -->
+            <section class="special-occasions-section">
+                <h2 class="module-title">Avantajlı Turlar</h2>
+                <p class="module-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
+                </p>
+
+                <div class="tabs-container">
+                    <!-- Tab Navigation -->
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" onclick="switchTab(event, 'vizesiz')">Vizesiz Turlar</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'kolayVize')">Kolay Vizeli Turlar</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'erkenRezervasyon')">Erken Rezervasyon
+                            Turları</button>
+                        <button class="tab-btn" onclick="switchTab(event, 'herSeyDahil')">Her Şey Dahil Turlar</button>
+                    </div>
+
+                    <!-- Tab Content: Vizesiz Turlar -->
+                    <div id="vizesiz" class="tab-content active">
+                        <h3 class="tab-title">Vizesiz Turlar</h3>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Vizesiz-Turlar/Gurcistan-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Vizesiz Tur">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Gürcistan Turu | Tiflis, Batum, Kazbegi</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Tiflis, Batum</p>
+                                    <p class="cheap-tour-detail">⏱️ 5 gece 6 gün</p>
+                                    <p class="cheap-tour-detail">📅 Nisan 2026 - Kasım 2026</p>
+                                    <p class="cheap-tour-price">€520'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Vizesiz-Turlar/Azerbaycan-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Vizesiz Tur">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Azerbaycan Turu | Bakü, Şeki, Quba</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Bakü</p>
+                                    <p class="cheap-tour-detail">⏱️ 4 gece 5 gün</p>
+                                    <p class="cheap-tour-detail">📅 Nisan 2026 - Ekim 2026</p>
+                                    <p class="cheap-tour-price">€480'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Vizesiz-Turlar/Bosna-Hersek-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Vizesiz Tur">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Bosna Hersek Turu | Saraybosna, Mostar</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Saraybosna</p>
+                                    <p class="cheap-tour-detail">⏱️ 4 gece 5 gün</p>
+                                    <p class="cheap-tour-detail">📅 Mayıs 2026 - Ekim 2026</p>
+                                    <p class="cheap-tour-price">€550'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Vizesiz-Turlar"
+                                class="btn-view-all-special">
+                                Bütün Vizesiz Turlar →
+                            </a>
+                        </div>
+
+                        <!-- Vizesiz Turları Sub-section -->
+                        <h4 class="tab-title" style="margin-top: 35px; font-size: 20px; margin-bottom: 12px;">Vizesiz
+                            Cruise Turları</h4>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Vizesiz-Turlari/Akdeniz-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Vizesiz">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Akdeniz Vizesiz Turu | 7 Gece</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Yunan Adaları</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Mayıs 2026 - Ekim 2026</p>
+                                    <p class="cheap-tour-price">€650'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Vizesiz-Turlari/Ege-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Vizesiz">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Ege Vizesiz Turu | İzmir Kalkışlı</h4>
+                                    <p class="cheap-tour-detail">📍 İzmir - Yunan Adaları</p>
+                                    <p class="cheap-tour-detail">⏱️ 5 gece 6 gün</p>
+                                    <p class="cheap-tour-detail">📅 Haziran 2026 - Eylül 2026</p>
+                                    <p class="cheap-tour-price">€580'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Vizesiz-Turlari/Karadeniz-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Vizesiz">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Karadeniz Vizesiz Turu</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Karadeniz</p>
+                                    <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                    <p class="cheap-tour-detail">📅 Mayıs 2026 - Ekim 2026</p>
+                                    <p class="cheap-tour-price">€720'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Vizesiz-Cruise-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Vizesiz Cruise Turları →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Kolay Vizeli Turlar -->
+                    <div id="kolayVize" class="tab-content">
+                        <h3 class="tab-title">Kolay Vizeli Turlar</h3>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Kolay-Vizeli-Turlar/Dubai-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Kolay Vizeli Tur">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Dubai Turu | Burj Khalifa, Dubai Mall</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Dubai</p>
+                                    <p class="cheap-tour-detail">⏱️ 5 gece 6 gün</p>
+                                    <p class="cheap-tour-detail">📅 Tüm Yıl</p>
+                                    <p class="cheap-tour-price">€750'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Kolay-Vizeli-Turlar/Misir-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Kolay Vizeli Tur">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Mısır Turu | Kahire, Luksor, Nil Nehri</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Kahire</p>
+                                    <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                    <p class="cheap-tour-detail">📅 Ekim 2026 - Nisan 2026</p>
+                                    <p class="cheap-tour-price">€680'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Kolay-Vizeli-Turlar/Hindistan-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Kolay Vizeli Tur">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Hindistan Turu | Delhi, Agra, Jaipur</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Delhi</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Ekim 2026 - Mart 2026</p>
+                                    <p class="cheap-tour-price">€920'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/kolay-vize"
+                                class="btn-view-all-special">
+                                Bütün Kolay Vizeli Turlar →
+                            </a>
+                        </div>
+
+                        <!-- Kolay Vizeli Turları Sub-section -->
+                        <h4 class="tab-title" style="margin-top: 35px; font-size: 20px; margin-bottom: 12px;">Kolay
+                            Vizeli Cruise Turları</h4>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Kolay-Vizeli-Turlari/Dubai-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Kolay Vizeli">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Dubai Turu | Kolay Vize ile</h4>
+                                    <p class="cheap-tour-detail">📍 Dubai - Hindistan</p>
+                                    <p class="cheap-tour-detail">⏱️ 8 gece 9 gün</p>
+                                    <p class="cheap-tour-detail">📅 Ekim 2026 - Nisan 2026</p>
+                                    <p class="cheap-tour-price">€1250'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Kolay-Vizeli-Turlari/Misir-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Kolay Vizeli">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Mısır Turu | Nil Nehri</h4>
+                                    <p class="cheap-tour-detail">📍 Kahire - Luxor - Aswan</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Ekim 2026 - Nisan 2026</p>
+                                    <p class="cheap-tour-price">€980'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Kolay-Vizeli-Turlari/Arap-Emirlikleri-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Kolay Vizeli">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Arap Emirlikleri Turu</h4>
+                                    <p class="cheap-tour-detail">📍 Dubai - Abu Dhabi</p>
+                                    <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                    <p class="cheap-tour-detail">📅 Kasım 2026 - Mart 2026</p>
+                                    <p class="cheap-tour-price">€1100'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Kolay-Vizeli-Cruise-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Kolay Vizeli Cruise Turları →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Erken Rezervasyon Turları -->
+                    <div id="erkenRezervasyon" class="tab-content">
+                        <h3 class="tab-title">Erken Rezervasyon Turları</h3>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Erken-Rezervasyon-Turlari/Yunanistan-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Erken Rezervasyon Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Erken Rezervasyon Yunanistan Turu | %30 İndirim</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Atina, Mykonos, Santorini</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Haziran 2026 - Eylül 2026</p>
+                                    <p class="cheap-tour-price">€690'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Erken-Rezervasyon-Turlari/Italya-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Erken Rezervasyon Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Erken Rezervasyon İtalya Turu | %25 İndirim</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Roma, Floransa, Venedik</p>
+                                    <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                    <p class="cheap-tour-detail">📅 Mayıs 2026 - Ekim 2026</p>
+                                    <p class="cheap-tour-price">€890'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Erken-Rezervasyon-Turlari/Ispanya-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Erken Rezervasyon Turu">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Erken Rezervasyon İspanya Turu | %20 İndirim</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Barselona, Madrid, Sevilla</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Mayıs 2026 - Ekim 2026</p>
+                                    <p class="cheap-tour-price">€950'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Erken-Rezervasyon-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Erken Rezervasyon Turları →
+                            </a>
+                        </div>
+
+                        <!-- Erken Rezervasyon Turları Sub-section -->
+                        <h4 class="tab-title" style="margin-top: 35px; font-size: 20px; margin-bottom: 12px;">Erken
+                            Rezervasyon Cruise Turları</h4>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Erken-Rezervasyon-Turlari/Akdeniz-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Erken Rezervasyon">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Erken Rezervasyon Akdeniz | %35 İndirim</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - İtalya, Yunanistan</p>
+                                    <p class="cheap-tour-detail">⏱️ 8 gece 9 gün</p>
+                                    <p class="cheap-tour-detail">📅 Haziran 2026 - Eylül 2026</p>
+                                    <p class="cheap-tour-price">€1150'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Erken-Rezervasyon-Turlari/Karayip-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Erken Rezervasyon">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Erken Rezervasyon Karayip | %40 İndirim</h4>
+                                    <p class="cheap-tour-detail">📍 Miami - Karayip Adaları</p>
+                                    <p class="cheap-tour-detail">⏱️ 10 gece 11 gün</p>
+                                    <p class="cheap-tour-detail">📅 Ocak 2027 - Mart 2027</p>
+                                    <p class="cheap-tour-price">€1850'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Erken-Rezervasyon-Turlari/Bati-Akdeniz-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Erken Rezervasyon">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Erken Rezervasyon Batı Akdeniz | %30 İndirim
+                                    </h4>
+                                    <p class="cheap-tour-detail">📍 Barcelona - Fransa, İtalya</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Haziran 2026 - Eylül 2026</p>
+                                    <p class="cheap-tour-price">€1280'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Erken-Rezervasyon-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Erken Rezervasyon Cruise Turları →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Her Şey Dahil Turlar -->
+                    <div id="herSeyDahil" class="tab-content">
+                        <h3 class="tab-title">Her Şey Dahil Turlar</h3>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Her-Sey-Dahil-Turlar/Antalya-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Her Şey Dahil Tur">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Pegasus ile Antalya Her Şey Dahil Turu | 5 Yıldızlı
+                                        Otel</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Antalya</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Haziran 2026 - Eylül 2026</p>
+                                    <p class="cheap-tour-price">€450'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Her-Sey-Dahil-Turlar/Bodrum-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Her Şey Dahil Tur">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Turkish Airlines ile Bodrum Her Şey Dahil Turu | Deniz
+                                        Kenarı Otel</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Bodrum</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Mayıs 2026 - Ekim 2026</p>
+                                    <p class="cheap-tour-price">€520'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Her-Sey-Dahil-Turlar/Kusadasi-Turu'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/new_year_tour_1764845091402.png"
+                                        alt="Her Şey Dahil Tur">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">SunExpress ile Kuşadası Her Şey Dahil Turu | Ultra Lüks
+                                        Otel</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Kuşadası</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Haziran 2026 - Eylül 2026</p>
+                                    <p class="cheap-tour-price">€480'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Her-Sey-Dahil-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Her Şey Dahil Turlar →
+                            </a>
+                        </div>
+
+                        <!-- Her Şey Dahil Turları Sub-section -->
+                        <h4 class="tab-title" style="margin-top: 35px; font-size: 20px; margin-bottom: 12px;">Her Şey
+                            Dahil Cruise Turları</h4>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+                        <!-- Cards Grid -->
+                        <div class="special-cards-grid">
+                            <!-- Card 1 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Her-Sey-Dahil-Cruise/MSC-Bellissima'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Her Şey Dahil">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">MSC Bellissima ile Her Şey Dahil Akdeniz</h4>
+                                    <p class="cheap-tour-detail">📍 İstanbul - Akdeniz</p>
+                                    <p class="cheap-tour-detail">⏱️ 7 gece 8 gün</p>
+                                    <p class="cheap-tour-detail">📅 Haziran 2026 - Eylül 2026</p>
+                                    <p class="cheap-tour-price">€890'dan itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Her-Sey-Dahil-Cruise/Costa-Deliziosa'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Her Şey Dahil">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Costa Deliziosa ile Her Şey Dahil Ege</h4>
+                                    <p class="cheap-tour-detail">📍 İzmir - Yunan Adaları</p>
+                                    <p class="cheap-tour-detail">⏱️ 6 gece 7 gün</p>
+                                    <p class="cheap-tour-detail">📅 Mayıs 2026 - Ekim 2026</p>
+                                    <p class="cheap-tour-price">€750'den itibaren</p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="cheap-tour-card"
+                                onclick="window.location.href='https://www.etstur.com/Her-Sey-Dahil-Cruise/Norwegian-Epic'">
+                                <div class="cheap-card-image">
+                                    <img src="file:///Users/candas.torun/.gemini/antigravity/brain/b061896c-7027-4f9a-b9d2-6ef3d14b9925/cruise_ship_tour_1764839531499.png"
+                                        alt="Her Şey Dahil">
+                                </div>
+                                <div class="cheap-card-content">
+                                    <h4 class="cheap-tour-title">Norwegian Epic ile Her Şey Dahil Batı Akdeniz
+                                    </h4>
+                                    <p class="cheap-tour-detail">📍 Barcelona - İtalya, Fransa</p>
+                                    <p class="cheap-tour-detail">⏱️ 8 gece 9 gün</p>
+                                    <p class="cheap-tour-detail">📅 Haziran 2026 - Eylül 2026</p>
+                                    <p class="cheap-tour-price">€1050'den itibaren</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- View All Link -->
+                        <div class="view-all-special">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Her-Sey-Dahil-Cruise-Turlari"
+                                class="btn-view-all-special">
+                                Bütün Her Şey Dahil Cruise Turları →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <!-- Aktivite Türlerine Göre Turlar Module -->
+        <section class="activity-tours-section" style="padding: 60px 20px; background-color: #f5f5f5;">
+            <div class="container">
+                <h2 class="section-title">Aktivite Türlerine Göre Turlar</h2>
+                <p style="font-size: 15px; color: #666; line-height: 1.8; margin-bottom: 40px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+
+                <div class="activity-list">
+                    <!-- Activity Row 1: -->
+                    <div class="activity-row"
+                        style="display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 20px; background: white; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div class="activity-category"
+                            style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: #333; font-size: 15px;">
+                            <span style="font-size: 28px;">🚢</span>
+                            <span>Cruise (Gemi Turları)</span>
+                        </div>
+                        <div class="activity-tours"
+                            style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                            <span style="color: #333; font-size: 14px;">Royal Caribbean Turları</span>
+                            <span style="color: #333; font-size: 14px;">Yunan Adaları Turları</span>
+                            <span style="color: #333; font-size: 14px;">Norveç Fiyortları Turları</span>
+                            <span style="color: #333; font-size: 14px;">Alaska Turları</span>
+                        </div>
+                    </div>
+
+                    <!-- Activity Row 2: Safari -->
+                    <div class="activity-row"
+                        style="display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 20px; background: white; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div class="activity-category"
+                            style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: #333; font-size: 15px;">
+                            <span style="font-size: 28px;">🦁</span>
+                            <span>Safari & Vahşi Yaşam</span>
+                        </div>
+                        <div class="activity-tours"
+                            style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                            <span style="color: #333; font-size: 14px;">Güney Afrika Turları</span>
+                            <span style="color: #333; font-size: 14px;">Afrika Turları</span>
+                            <span style="color: #333; font-size: 14px;">Cape Town Turları</span>
+                            <span style="color: #333; font-size: 14px;">Johannesburg Turları</span>
+                        </div>
+                    </div>
+
+                    <!-- Activity Row 3: Doğa Yürüyüşü -->
+                    <div class="activity-row"
+                        style="display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 20px; background: white; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div class="activity-category"
+                            style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: #333; font-size: 15px;">
+                            <span style="font-size: 28px;">🏔️</span>
+                            <span>Doğa Yürüyüşü & Macera</span>
+                        </div>
+                        <div class="activity-tours"
+                            style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                            <span style="color: #333; font-size: 14px;">Kuzey Işıkları Turları</span>
+                            <span style="color: #333; font-size: 14px;">Lapland Turları</span>
+                            <span style="color: #333; font-size: 14px;">Machu Picchu Turları</span>
+                            <span style="color: #333; font-size: 14px;">Peru Turları</span>
+                        </div>
+                    </div>
+
+                    <!-- Activity Row 4: Nehir Turları -->
+                    <div class="activity-row"
+                        style="display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 20px; background: white; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div class="activity-category"
+                            style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: #333; font-size: 15px;">
+                            <span style="font-size: 28px;">🛥️</span>
+                            <span>Nehir Turları</span>
+                        </div>
+                        <div class="activity-tours"
+                            style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                            <span style="color: #333; font-size: 14px;">Tuna Nehri Turları</span>
+                            <span style="color: #333; font-size: 14px;">Ren Nehri Turları</span>
+                            <span style="color: #333; font-size: 14px;">Nil Nehri Turları</span>
+                            <span style="color: #333; font-size: 14px;">Volga Nehri Turları</span>
+                        </div>
+                    </div>
+
+                    <!-- Activity Row 5: Deniz & Egzotik -->
+                    <div class="activity-row"
+                        style="display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 20px; background: white; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div class="activity-category"
+                            style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: #333; font-size: 15px;">
+                            <span style="font-size: 28px;">🏝️</span>
+                            <span>Deniz & Egzotik Adalar</span>
+                        </div>
+                        <div class="activity-tours"
+                            style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                            <span style="color: #333; font-size: 14px;">Maldivler Turları</span>
+                            <span style="color: #333; font-size: 14px;">Seyşeller Turları</span>
+                            <span style="color: #333; font-size: 14px;">Phuket Turları</span>
+                            <span style="color: #333; font-size: 14px;">Bali Turları</span>
+                        </div>
+                    </div>
+
+                    <!-- Activity Row 6: Kültür & Şehir -->
+                    <div class="activity-row"
+                        style="display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 20px; background: white; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div class="activity-category"
+                            style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: #333; font-size: 15px;">
+                            <span style="font-size: 28px;">🏛️</span>
+                            <span>Kültür & Şehir Keşfi</span>
+                        </div>
+                        <div class="activity-tours"
+                            style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                            <span style="color: #333; font-size: 14px;">İtalya Turları</span>
+                            <span style="color: #333; font-size: 14px;">Endülüs Turları</span>
+                            <span style="color: #333; font-size: 14px;">Paris Turları</span>
+                            <span style="color: #333; font-size: 14px;">Prag Turları</span>
+                        </div>
+                    </div>
+
+                    <!-- Activity Row 7: Eğlence -->
+                    <div class="activity-row"
+                        style="display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 20px; background: white; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div class="activity-category"
+                            style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: #333; font-size: 15px;">
+                            <span style="font-size: 28px;">🎢</span>
+                            <span>Eğlence & Tema Parkları</span>
+                        </div>
+                        <div class="activity-tours"
+                            style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                            <span style="color: #333; font-size: 14px;">Disneyland Paris Turları</span>
+                            <span style="color: #333; font-size: 14px;">Orlando Turları</span>
+                            <span style="color: #333; font-size: 14px;">Legoland Turları</span>
+                            <span style="color: #333; font-size: 14px;">Disneys Turları</span>
+                        </div>
+                    </div>
+
+                    <!-- Activity Row 8: Balayı -->
+                    <div class="activity-row"
+                        style="display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 20px; background: white; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div class="activity-category"
+                            style="display: flex; align-items: center; gap: 12px; font-weight: 700; color: #333; font-size: 15px;">
+                            <span style="font-size: 28px;">💑</span>
+                            <span>Balayı & Romantizm</span>
+                        </div>
+                        <div class="activity-tours"
+                            style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px;">
+                            <span style="color: #333; font-size: 14px;">Maldivler Balayı Turları</span>
+                            <span style="color: #333; font-size: 14px;">Bali Balayı Turları</span>
+                            <span style="color: #333; font-size: 14px;">Santorini Turları</span>
+                            <span style="color: #333; font-size: 14px;">Venedik Turları</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- World Map Section -->
+        <section style="padding: 60px 20px; background-color: #f5f5f5;">
+            <div class="container">
+                <h2 class="section-title" style="margin-bottom: 30px;">Haritaya Göz Atın</h2>
+                <div
+                    style="position: relative; width: 100%; height: 600px; background-image: url('/Users/candas.torun/.gemini/antigravity/brain/75545583-ffd9-45ef-a227-7611421fb22f/world_map_background_1764881433235.png'); background-size: 110%; background-repeat: no-repeat; background-position: center; background-color: transparent;">
+
+                    <!-- CRUISE TOURS (Ship Icons) -->
+
+                    <!-- Barcelona -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 47%; top: 40%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Barcelona (3 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Venice -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 51%; top: 37%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Venice (2 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Athens -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 54%; top: 42%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Athens (4 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Istanbul -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 56%; top: 40%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Istanbul (5 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dubrovnik -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 52%; top: 39%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Dubrovnik
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Santorini -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 55%; top: 44%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Santorini (2 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mykonos -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 56%; top: 43%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Mykonos
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Naples -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 52%; top: 41%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Naples
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nice -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 49%; top: 38%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Nice
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kotor -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 53%; top: 40%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Kotor
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Miami (New Cruise) -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 26%; top: 48%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Miami (3 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caribbean (New Cruise) -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 28%; top: 52%; cursor: pointer;">
+                        <div style="font-size: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">🚢
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Caribbean (5 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- INTERNATIONAL TOURS (Plane Icons) -->
+
+                    <!-- Paris -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 48%; top: 35%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Paris (4 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- London -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 47%; top: 32%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                London (3 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rome -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 51%; top: 40%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Rome (5 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dubai -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 60%; top: 47%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Dubai (2 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tokyo -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 78%; top: 37%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Tokyo
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New York -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 24%; top: 38%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                New York (3 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bangkok -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 71%; top: 52%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Bangkok (2 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Singapore -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 72%; top: 58%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Singapore
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Maldives -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 65%; top: 60%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Maldives (2 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bali -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 75%; top: 62%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Bali
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sydney -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 80%; top: 74%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Sydney
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cairo -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 55%; top: 48%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Cairo
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prague -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 52%; top: 34%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Prague (2 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amsterdam -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 49%; top: 31%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Amsterdam (3 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vienna -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 53%; top: 36%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Vienna
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Los Angeles -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 18%; top: 40%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Los Angeles
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rio de Janeiro -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 33%; top: 67%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Rio de Janeiro
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Toronto (New) -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 22%; top: 34%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Toronto
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Moscow (New) -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 60%; top: 28%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Moscow
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beijing (New) -->
+                    <div class="map-pin" style="position: absolute; z-index: 10; left: 74%; top: 38%; cursor: pointer;">
+                        <div style="font-size: 18px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">✈️
+                            <div class="pin-tooltip"
+                                style="position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); background: white; padding: 8px 14px; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.3s; font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0e0e0;">
+                                Beijing (2 Tur)
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Latin Content Section -->
+        <section class="content-section" style="padding: 60px 0; background-color: #f5f5f5;">
+            <div class="container">
+                <h2 class="section-title">Lorem Ipsum Dolor</h2>
+
+                <div class="content-block" style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 600; color: #333; margin-bottom: 15px;">Sit Amet
+                        Consectetur</h3>
+                    <p style="color: #666; line-height: 1.8; margin-bottom: 20px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p style="color: #666; line-height: 1.8;">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3 style="font-size: 20px; font-weight: 600; color: #333; margin-bottom: 15px;">Adipiscing Elit Sed
+                        Do</h3>
+                    <p style="color: #666; line-height: 1.8; margin-bottom: 20px;">
+                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                        qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" style="padding: 60px 0; background-color: #f5f5f5;">
+            <div class="container">
+                <h2 class="section-title" style="margin-bottom: 50px;">Sıkça Sorulan Sorular</h2>
+
+                <div class="accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Tur rezervasyonumu nasıl yapabilirim?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Web sitemiz üzerinden dilediğiniz turu seçip "Rezervasyon Yap" butonuna tıklayarak veya
+                                çağrı merkezimizi arayarak rezervasyonunuzu kolayca gerçekleştirebilirsiniz.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Vize işlemleri konusunda yardımcı oluyor musunuz?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Evet, vize gerektiren turlarımızda profesyonel vize departmanımız başvuru sürecinizde
+                                size rehberlik etmekte ve gerekli desteği sağlamaktadır.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Turlarda rehberlik hizmeti var mı?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Tüm yurtdışı ve kültür turlarımızda Türkçe konuşan, bölgeye hakim profesyonel
+                                rehberlerimiz size eşlik etmektedir.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>İptal ve iade koşulları nelerdir?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Tur tarihine 30 gün kala yapılan iptallerde kesintisiz iade hakkınız bulunmaktadır. Daha
+                                yakın tarihli iptallerde tur sözleşmesindeki koşullar geçerlidir.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Çocuk indirimleri uygulanıyor mu?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Evet, 0-2 yaş ve 3-12 yaş grubu çocuklar için turlarımızda özel indirim oranları
+                                uygulanmaktadır. İndirim oranları tur programına ve konaklama tipine göre değişiklik
+                                gösterebilir.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Turlara tek kişi katılabilir miyim?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Elbette, turlarımıza tek kişi olarak katılabilirsiniz. Tek kişilik konaklamalarda "Single
+                                Farkı" uygulanmaktadır. Dilerseniz oda arkadaşı eşleştirmesi için de talepte
+                                bulunabilirsiniz.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 7 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Ödeme seçenekleri nelerdir?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Kredi kartına taksit imkanı, havale/EFT ve ofislerimizde nakit ödeme seçeneklerimiz
+                                mevcuttur. Erken rezervasyon dönemlerinde özel ödeme avantajlarından da
+                                yararlanabilirsiniz.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 8 -->
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Seyahat sigortası zorunlu mu?</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Yurtdışı turlarımızda seyahat sağlık sigortası zorunludur ve tur ücretine dahildir.
+                                Yurtiçi turlarda ise isteğe bağlı olarak sigorta yaptırabilirsiniz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daha Fazla Tur Destinasyonu Module -->
+        <section class="more-destinations-section" style="padding: 60px 0; background-color: #f5f5f5;">
+            <div class="container">
+                <h2 class="section-title" style="margin-bottom: 40px;">Daha Fazla Tur Destinasyonu</h2>
+
+                <!-- Tabs Navigation -->
+                <div class="destination-tabs-container">
+                    <div class="destination-tabs-nav">
+                        <button class="destination-tab-btn active"
+                            onclick="switchDestinationTab(event, 'yurtdisi-lokasyon')">Yurtdışı Tur
+                            Lokasyonları</button>
+                        <button class="destination-tab-btn"
+                            onclick="switchDestinationTab(event, 'tematik-turlar')">Tematik Turlar & Özel
+                            Günler</button>
+                        <button class="destination-tab-btn"
+                            onclick="switchDestinationTab(event, 'cruise-turlari')">Cruise Turları</button>
+                    </div>
+
+                    <!-- Tab Content: Yurtdışı Tur Lokasyonları -->
+                    <div id="yurtdisi-lokasyon" class="destination-tab-content active">
+                        <div class="destination-links-grid">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Azerbaycan-Turlari"
+                                class="destination-link">Azerbaycan Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Belgrad-Turlari"
+                                class="destination-link">Belgrad Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Karadag-Turlari"
+                                class="destination-link">Karadağ Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Paris-Turlari"
+                                class="destination-link">Paris Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Bosna-Hersek-Turlari"
+                                class="destination-link">Bosna Hersek Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Guney-Kore-Turlari"
+                                class="destination-link">Güney Kore Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Amerika-Turlari"
+                                class="destination-link">Amerika Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Saint-Petersburg-Turlari"
+                                class="destination-link">Saint Petersburg Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Ingiltere-Turlari"
+                                class="destination-link">İngiltere Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Phuket-Turlari"
+                                class="destination-link">Phuket Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Viyana-Turlari"
+                                class="destination-link">Viyana Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Orta-Avrupa-Turlari"
+                                class="destination-link">Orta Avrupa Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Sirbistan-Turlari"
+                                class="destination-link">Sırbistan Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Japonya-Ve-Kore-Turlari"
+                                class="destination-link">Japonya Ve Kore Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Roma-Turlari"
+                                class="destination-link">Roma Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Almanya-Turlari"
+                                class="destination-link">Almanya Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/italya-turlari"
+                                class="destination-link">İtalya Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Londra-Turlari"
+                                class="destination-link">Londra Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Yunan-Adalari-Turlari"
+                                class="destination-link">Yunan Adaları Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Beneluks-Paris-Amsterdam-Turlari"
+                                class="destination-link">Benelüks Paris Amsterdam Turları</a>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Tematik Turlar & Özel Günler -->
+                    <div id="tematik-turlar" class="destination-tab-content">
+                        <div class="destination-links-grid">
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Noel-Pazarlari-Turlari"
+                                class="destination-link">Noel Pazarları Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Nehir-Turlari"
+                                class="destination-link">Nehir Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Balayi-Turlari"
+                                class="destination-link">Balayı Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Noel-Pazarlari"
+                                class="destination-link">Noel Pazarları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Tuna-Nehri-Turlari"
+                                class="destination-link">Tuna Nehri Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Volga-Nehri-Turlari"
+                                class="destination-link">Volga Nehri Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Disneyland-Paris-Turlari"
+                                class="destination-link">Disneyland Paris Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Kurban-Bayrami-Cruise-Turlari"
+                                class="destination-link">Kurban Bayramı Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Ren-Nehri-Turlari"
+                                class="destination-link">Ren Nehri Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Yilbasi-Cruise-Turlari"
+                                class="destination-link">Yılbaşı Cruise Turları</a>
+                            <a href="https://www.etstur.com/Yurtdisi-Tatil-Turlari/Kasim-Ara-Tatil"
+                                class="destination-link">Kasım Ara Tatil</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Vizesiz-Cruise-Turlari"
+                                class="destination-link">Vizesiz Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Kapi-Vizeli-Cruise-Turlari"
+                                class="destination-link">Kapı Vizeli Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Nil-Nehri-Cruise-Turlari"
+                                class="destination-link">Nil Nehri Cruise Turları</a>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Cruise Turları -->
+                    <div id="cruise-turlari" class="destination-tab-content">
+                        <div class="destination-links-grid">
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Ispanya-Cruise-Turlari"
+                                class="destination-link">İspanya Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Kuzey-Avrupa-Turlari"
+                                class="destination-link">Kuzey Avrupa Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Karayip-Turlari"
+                                class="destination-link">Karayip Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Baltik-Baskentleri-Turlari"
+                                class="destination-link">Baltık Başkentleri Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Birlesik-Arap-Emirlikleri-Turlari"
+                                class="destination-link">Birleşik Arap Emirlikleri Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Ege-Ve-Adriyatik-Turlari"
+                                class="destination-link">Ege Ve Adriyatik Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Akdeniz-Cruise-Turlari"
+                                class="destination-link">Akdeniz Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Girit-Turlari"
+                                class="destination-link">Girit Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Alaska-Cruise-Turlari"
+                                class="destination-link">Alaska Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Somestir-Gemi-Turlari-"
+                                class="destination-link">Sömestir Gemi Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Cruise-Gemi-Turlari"
+                                class="destination-link">Cruise Gemi Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Avustralya-Yeni-Zelanda-Turlari"
+                                class="destination-link">Avustralya Yeni Zelanda Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Tayland-Cruise-Turlari"
+                                class="destination-link">Tayland Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Fransa-Cruise-Turlari"
+                                class="destination-link">Fransa Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Guney-Amerika-Cruise-Turlari"
+                                class="destination-link">Güney Amerika Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Japonya-Cruise-Turlari"
+                                class="destination-link">Japonya Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Rodos-Cruise-Turlari"
+                                class="destination-link">Rodos Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Dubai-Cruise-Turlari"
+                                class="destination-link">Dubai Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Sydney-Cruise-Turlari"
+                                class="destination-link">Sydney Cruise Turları</a>
+                            <a href="https://www.etstur.com/Cruise-Gemi-Turlari/Uzak-Dogu-Cruise-Turlari"
+                                class="destination-link">Uzak Doğu Cruise Turları</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">Kurumsal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Kariyer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Hizmetlerimiz</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Otel Rezervasyonu</a></li>
+                        <li><a href="#">Tur Paketleri</a></li>
+                        <li><a href="#">Uçak Bileti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Yardım</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">SSS</a></li>
+                        <li><a href="#">İptal & İade</a></li>
+                        <li><a href="#">Gizlilik</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">İletişim</h4>
+                    <ul class="footer-links">
+                        <li>444 0 387</li>
+                        <li>info@etstur.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Etstur. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -58,29 +58,6 @@
         </div>
     </header>
 
-    <!-- Top Navigation Bar -->
-    <header class="top-nav">
-        <div class="container-fluid">
-            <div class="nav-content">
-                <div class="nav-left">
-                    <div class="logo">
-                        <span class="logo-text">etstur</span>
-                    </div>
-                </div>
-                <div class="nav-right">
-                    <a href="#" class="nav-action">
-                        <span class="icon">📞</span>
-                        <span>444 0 387</span>
-                    </a>
-                    <a href="#" class="nav-action">
-                        <span class="icon">👤</span>
-                        <span>Giriş Yap</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <!-- Hero Section with Search -->
     <section class="hero-section">
         <div class="hero-overlay"></div>
@@ -97,18 +74,19 @@
                 <h1 class="hero-title">Turlar</h1>
                 <div class="description-wrapper">
                     <p class="hero-description" id="heroDescription">
-                        Seyahat tutkunları, maceraseverler, kaşfiler, doğal güzelliklerin, lezzetin ya da tarihin
-                        izlerini sürmek isteyenler... ETS'de çok özel programlar sunan turlar ile heyecan dolu
-                        deneyimler sizi bekliyor! İster Yurt Dışı Turları ister Turları ile dünyanın dört bir
-                        köşesinde, kısa ya da uzun süreli, yakın ya da uzak mesafede bir tatil planlayıp yepyeni
-                        hikayelerin peşine düşebilirsiniz.
+                        Seyahat tutkunları, maceraseverler, kaşifler, doğal güzelliklerin, lezzetin ya da tarihin
+                        izlerini sürmek isteyenler... ETS'nin ayrıcalıklı dünyasında, her beklentiye uygun yüzlerce tur
+                        seçeneği ile hayallerinizdeki tatili gerçeğe dönüştürün. İster Avrupa'nın sanat kokan
+                        sokaklarında kaybolun, ister Uzak Doğu'nun mistik tapınaklarını keşfedin, isterseniz de turkuaz
+                        denizlerde mavi yolculuğa çıkın. Profesyonel rehberler eşliğinde gerçekleşen kültür turları,
+                        vizesiz seyahat avantajları, erken rezervasyon fırsatları ve size özel ödeme kolaylıkları ile
+                        dünyayı keşfetmek artık çok daha keyifli.
                         <span class="extra-content">
-                            Turlarımız, her zevke ve bütçeye uygun seçenekler sunmaktadır. Kültür turları ile tarihi
-                            şehirleri keşfedebilir, doğa turları ile eşsiz manzaraların tadını çıkarabilir, gastronomi
-                            turları ile yerel lezzetleri deneyimleyebilirsiniz. Ayrıca, yılbaşı turları, bayram turları
-                            ve özel dönem turları ile önemli günlerde unutulmaz anılar biriktirme fırsatı
-                            bulabilirsiniz. Profesyonel rehberlerimiz eşliğinde, güvenli ve konforlu bir seyahat
-                            deneyimi yaşayacaksınız.
+                            Yurt dışı turları, gemi turları, kültür turları ve çok daha fazlası için rotanızı şimdi
+                            oluşturun, unutulmaz anılar biriktirmeye hemen başlayın. Dünyanın dört bir yanındaki eşsiz
+                            destinasyonlar, farklı kültürler ve benzersiz deneyimler sizi bekliyor. ETS güvencesiyle
+                            çıkacağınız her yolculuk, sadece yeni yerler görmenizi değil, aynı zamanda kendinizi de
+                            yeniden keşfetmenizi sağlayacak. Haydi, valizinizi hazırlayın ve maceraya adım atın!
                         </span>
                     </p>
                     <button class="read-more-btn" id="readMoreBtn" onclick="toggleContent()">
@@ -122,6 +100,153 @@
     <!-- Main Content Area -->
     <main class="main-content">
         <div class="container">
+            <!-- Kampanyalar Module -->
+            <section class="campaigns-section">
+                <h2 class="module-title">Kampanyalar</h2>
+
+                <!-- Tabs -->
+                <div class="campaign-tabs">
+                    <button class="campaign-tab-btn active"
+                        onclick="switchCampaignTab(event, 'yurtdisi-campaigns')">Yurtdışı Turları Kampanyaları</button>
+                    <button class="campaign-tab-btn" onclick="switchCampaignTab(event, 'cruise-campaigns')">Cruise
+                        Turları Kampanyaları</button>
+                </div>
+
+                <!-- Content: Yurtdışı -->
+                <div id="yurtdisi-campaigns" class="campaign-content active">
+                    <div class="campaign-slider-container">
+                        <button class="slider-btn prev-btn"
+                            onclick="scrollCampaignSlider('yurtdisi-slider', 'left')">❮</button>
+                        <div class="campaign-slider" id="yurtdisi-slider">
+                            <!-- Card 1 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Erken-Rezervasyon-Turlari'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/E30613/white?text=Erken+Rezervasyon"
+                                        alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">2025 Erken Rezervasyon Döneminde %50'ye Varan İndirimler
+                                </h4>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Vizesiz-Turlar'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/0066FF/white?text=Vizesiz+Turlar"
+                                        alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">Vizesiz Balkan Turlarında Peşin Fiyatına 3 Taksit
+                                    Fırsatı</h4>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/Italya-Turlari'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/FF6B35/white?text=Avrupa+Ruyasi"
+                                        alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">İtalya ve İspanya Turlarında İkinci Kişiye %30 İndirim
+                                </h4>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/Uzak-Dogu-Turlari'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/222222/white?text=Uzak+Dogu" alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">Uzak Doğu'nun Gizemli Rotalarında Rehberlik Hizmeti
+                                    Hediye</h4>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Yurtdisi-Tatil-Turlari/Balkan-Turlari'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/009900/white?text=Balkan+Turu"
+                                        alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">Otobüslü Büyük Balkan Turunda Ekstra Turlar Dahil
+                                    Paketler</h4>
+                            </div>
+                        </div>
+                        <button class="slider-btn next-btn"
+                            onclick="scrollCampaignSlider('yurtdisi-slider', 'right')">❯</button>
+                    </div>
+                    <div class="view-all-international" style="margin-top: 20px;">
+                        <a href="https://www.etstur.com/Kampanyalar/Yurtdisi-Turlari"
+                            class="btn-view-all-international">
+                            Bütün Yurtdışı Turları Kampanyaları →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Content: Cruise -->
+                <div id="cruise-campaigns" class="campaign-content">
+                    <div class="campaign-slider-container">
+                        <button class="slider-btn prev-btn"
+                            onclick="scrollCampaignSlider('cruise-slider', 'left')">❮</button>
+                        <div class="campaign-slider" id="cruise-slider">
+                            <!-- Card 1 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Cruise-Gemi-Turlari/Yunan-Adalari-Cruise-Turlari'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/0066cc/white?text=Yunan+Adalari"
+                                        alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">Ocak Ayında Yunan Adaları Cruise Turlarında %25 İndirim
+                                </h4>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Kampanyalar/Balayi-Turlari'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/ff0066/white?text=Balayi+Ozel"
+                                        alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">Balayı Çiftlerine Özel Kabin Süslemesi ve Şampanya
+                                    İkramı</h4>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Cruise-Gemi-Turlari'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/ffcc00/white?text=3.+Kisi+Ucretsiz"
+                                        alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">Seçili Akdeniz Gemi Turlarında Kabindeki 3. Kişi
+                                    Ücretsiz</h4>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Erken-Rezervasyon-Cruise-Turlari'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/6600cc/white?text=Erken+Rezervasyon"
+                                        alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">2026 Cruise Turlarında Şimdiden Yerini Ayırt, %40 Kâr Et
+                                </h4>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="campaign-card"
+                                onclick="window.location.href='https://www.etstur.com/Cruise-Gemi-Turlari/Vizesiz-Cruise-Turlari'">
+                                <div class="campaign-card-image">
+                                    <img src="https://placehold.co/280x160/00cc99/white?text=Vizesiz+Cruise"
+                                        alt="Kampanya">
+                                </div>
+                                <h4 class="campaign-card-title">Vizesiz Yunan Adaları Turlarında Kapı Vizesi Ücreti
+                                    Bizden</h4>
+                            </div>
+                        </div>
+                        <button class="slider-btn next-btn"
+                            onclick="scrollCampaignSlider('cruise-slider', 'right')">❯</button>
+                    </div>
+                    <div class="view-all-international" style="margin-top: 20px;">
+                        <a href="https://www.etstur.com/Kampanyalar/Cruise-Turlari" class="btn-view-all-international">
+                            Bütün Cruise Turları Kampanyaları →
+                        </a>
+                    </div>
+                </div>
+            </section>
+
             <!-- Yurtdışı Turları Module -->
             <section class="international-tours-section">
                 <h2 class="module-title">Yurtdışı Turları</h2>

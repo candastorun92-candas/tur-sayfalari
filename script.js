@@ -172,3 +172,42 @@ function switchDestinationTab(event, tabId) {
     event.target.classList.add('active');
     document.getElementById(tabId).classList.add('active');
 }
+
+function switchCampaignTab(tabId) {
+    // Remove active class from all buttons
+    const buttons = document.querySelectorAll('.campaign-tab-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    // Add active class to clicked button (event target handling needed if passed as arg, but here we simplify)
+    // Actually, let's find the button that calls this function. 
+    // Since we pass ID, we can find the button by iterating or passing 'this' in HTML.
+    // Let's update the HTML to pass 'event' as well.
+}
+
+// Better implementation with event
+function switchCampaignTab(event, tabId) {
+    // Remove active class from all buttons
+    const buttons = document.querySelectorAll('.campaign-tab-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    // Remove active class from all contents
+    const contents = document.querySelectorAll('.campaign-content');
+    contents.forEach(content => content.classList.remove('active'));
+    
+    // Add active class to clicked button
+    event.currentTarget.classList.add('active');
+    
+    // Show content
+    document.getElementById(tabId).classList.add('active');
+}
+
+function scrollCampaignSlider(sliderId, direction) {
+    const slider = document.getElementById(sliderId);
+    const scrollAmount = 300; // Adjust as needed
+    
+    if (direction === 'left') {
+        slider.scrollLeft -= scrollAmount;
+    } else {
+        slider.scrollLeft += scrollAmount;
+    }
+}
